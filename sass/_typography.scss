@@ -1,0 +1,19 @@
+.heading-primary {
+  font-size: $ft-size-60;
+  @extend %style-heading;
+}
+
+.heading-secondary {
+  font-size: $ft-size-36; //For large screen use $ft-size-48
+  @extend %style-heading;
+}
+
+.heading-tertiary {
+  font-size: $ft-size-28;
+  @extend %style-heading;
+}
+
+.heading-fourth {
+  font-size: $ft-size-18; // for large screen use $ft-size-21
+  @extend %style-heading;
+}
