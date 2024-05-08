@@ -40,7 +40,7 @@
     </header>
 
     <!--SECTION HERO -->
-    <section class="section-hero">
+    <section id="about" class="section-hero">
       <h1 class="heading-primarry">The shop</h1>
       <p class="hero__text">
         Established over a decade ago,<strong>The barber Shop</strong> is here
@@ -48,7 +48,7 @@
         trim or a hot towel shave, we're here to help you with.
       </p>
 
-      <a href="#appointment" class="btn btn-primary">Book appointement</a>
+      <a href="#appointments" class="btn btn-primary">Book appointement</a>
       <a href="#prices" class="btn btn-secondary">View prices</a>
 
       <img
@@ -60,7 +60,7 @@
 
     <main>
       <!-- SECTION SERVICES -->
-      <section class="section-services">
+      <section id="services" class="section-services">
         <h2 class="heading-secondary">Our services</h2>
         <div class="services">
           <figure class="service">
@@ -102,9 +102,10 @@
             </p>
           </figure>
         </div>
+        <a href="#appointments" class="btn btn-primary">Book appointement</a>
       </section>
       <!-- SECTION HOURS -->
-      <section class="section-hours">
+      <section id="hours" class="section-hours">
         <h2 class="heading-secondary">hours</h2>
         <p class="hours__supporting-text">
           Open 7 days a week to serve your hair cutting needs
@@ -148,7 +149,7 @@
       </section>
       <h2 class="heading-secondary">Pricing</h2>
       <!-- SECTION PRICING -->
-      <section class="pricing">
+      <section id="prices" class="pricing">
         <div class="prices">
           <div class="price">
             <h3 class="price__title">Adult cut</h3>
@@ -177,6 +178,41 @@
         </div>
       </section>
     </main>
+
+    <!-- SECTION APPOINTMENT -->
+    <section id="appointments" class="section-appointments">
+      <h2 class="heading-secondary">Book an appointment</h2>
+
+      <span class="appointment__supporting-text">
+        Please fill out the form below to book your appointement
+      </span>
+
+      <form action="" class="appointment__form">
+        <div class="appointment__form-box">
+          <label for="name">Your name</label><input id="name" type="text" />
+        </div>
+        <div class="appointment__form-box">
+          <label for="email">E-mail address</label
+          ><input id="email" type="email" />
+        </div>
+        <div class="appointment__form-box">
+          <label for="date">Date</label><input id="date" type="date" />
+        </div>
+        <div class="appointment__form-box">
+          <label for="phone-number">Phone number</label
+          ><input id="phone-number" type="number" />
+        </div>
+        <div class="appointment__form-box">
+          <label for="service">Select service</label
+          ><input id="service" type="text" />
+        </div>
+        <div class="appointment__form-box">
+          <label for="barber-name">Barber's name(Optional)</label
+          ><input id="barber-name" type="text" />
+        </div>
+        <button class="btn btn-primary">Book appointment</button>
+      </form>
+    </section>
     <!-- FOOTER -->
     <footer class="footer">
       <p class="footer__logo">The barber shop</p>
