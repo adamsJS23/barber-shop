@@ -17,34 +17,35 @@
   &__item {
   }
 
-  &__link {
-    font-family: 'Alegreya SC',sans-serif;
+  &__link:is(:link, :visited) {
+    font-family: "Alegreya SC", sans-serif;
     font-size: 1.8rem;
     text-decoration: none;
     color: $clr-white;
   }
+
+  &__link:is(:hover, :active) {
+    color: $clr-primary--2;
+  }
 }
 
-.section-hero{
+.section-hero {
   padding: 6rem 2rem;
   background-color: $clr-secondary--4;
-  color:$clr-secondary--1 ;
+  color: $clr-secondary--1;
   text-align: center;
 
-  & span{
+  & span {
     display: block;
   }
 }
 
-.hero{
-  &__img{
+.hero {
+  &__img {
     border-radius: 1rem;
   }
 
-  &__text{
+  &__text {
     margin-bottom: 2.5rem;
   }
 }
-
-
-
