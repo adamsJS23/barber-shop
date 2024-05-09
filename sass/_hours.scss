@@ -1,0 +1,59 @@
+.section-hours {
+  padding: 6rem 2rem;
+  background-color: $clr-secondary--4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hours {
+  &__supporting-text {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  &__row {
+    padding: 0 1rem;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__day {
+    @extend %style-heading;
+    color: $clr-secondary--2;
+    font-size: 2.8rem;
+  }
+
+  &__from-to {
+    font-size: 1.3rem;
+  }
+}
+
+.hours__row::before, .hours__row::after {
+  position: absolute;
+  content: "";
+  background-color: $clr-secondary;
+  
+  width: 1px;
+  height: 30%;
+  transform: translateY(130%);
+}
+
+
+.hours__row::before{
+left: 0;
+}
+.hours__row::after{
+right: 0;
+}
+
