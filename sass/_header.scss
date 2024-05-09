@@ -35,6 +35,10 @@
   color: $clr-secondary--1;
   text-align: center;
 
+  @include respond($bp-tab-port){
+    padding: 6rem;
+  }
+
   & span {
     display: block;
   }
@@ -43,6 +47,7 @@
 .hero {
   &__img {
     border-radius: 1rem;
+    width: 100%;
   }
 
   &__text {

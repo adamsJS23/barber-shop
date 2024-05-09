@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include respond($bp-tab-port){
+    padding: 6rem;
+  }
 }
 
 .hours {
@@ -13,7 +17,7 @@
   }
 
   &__row {
-    padding: 0 1rem;
+    padding: 0 2rem;
     position: relative;
     display: flex;
     gap: 2rem;

@@ -1,6 +1,10 @@
 .section-appointments {
   padding: 6rem 2rem;
   background-color: $clr-secondary--4;
+
+  @include respond($bp-tab-port){
+    padding: 6rem;
+  }
 }
 
 .appointment__supporting-text {

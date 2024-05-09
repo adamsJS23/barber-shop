@@ -1,6 +1,10 @@
 .section-pricing {
   padding: 6rem 2rem;
   background-color: $clr-secondary--3;
+
+  @include respond($bp-tab-port){
+    padding: 6rem;
+  }
 }
 
 .price {

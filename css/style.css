@@ -1,9 +1,10 @@
-.heading-primary, .heading-secondary, .heading-tertiary, .heading-fourth {
+.heading-primary, .heading-secondary, .heading-tertiary, .heading-fourth, .service__name, .hours__day, .price__description {
   font-family: "Alegreya SC", sans-serif;
   font-weight: 700;
-  color: #913022;
+  letter-spacing: 0.16rem;
   text-transform: uppercase;
-  letter-spacing: 16%; }
+  text-align: center;
+  color: #913022; }
 
 .bg-primary {
   background-color: #913022; }
@@ -13,6 +14,24 @@
 
 .clr-white {
   color: #efeae5; }
+
+.mgn-bt-tiny {
+  margin-bottom: 2.5rem; }
+
+.mgn-bt-small {
+  margin-bottom: 4rem; }
+
+.mgn-bt-medium {
+  margin-bottom: 6rem; }
+
+.mgn-bt-large {
+  margin-bottom: 8rem; }
+
+.mgn-bt-huge {
+  margin-bottom: 10rem; }
+
+.ln-height-small {
+  line-height: 1; }
 
 .heading-primary {
   font-size: 6rem; }
@@ -38,14 +57,221 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "SourceS Sans 3", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-size: 1.6rem;
+  line-height: 1.7;
   color: #1f1714; }
 
-.btn {
+img {
+  max-width: 100%; }
+
+.btn, .btn:is(:link, :visited) {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   display: inline-block;
-  padding: 1em 2em;
-  border-radius: 5px; }
+  padding: 1.5rem 4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #efeae5;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.05); }
+
+.btn-primary {
+  background-color: #d35643; }
+
+.btn-primary:is(:hover, :active) {
+  background-color: #913022; }
+
+.btn-secondary {
+  background-color: #47352c; }
+
+.btn-secondary:is(:hover, :active) {
+  background-color: #1f1714; }
+
+.header {
+  background-color: #1f1714;
+  padding: 2rem;
+  text-align: center; }
+  .header__logo {
+    margin-bottom: 2.5rem; }
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 4rem; }
+
+.nav__link:is(:link, :visited) {
+  font-family: "Alegreya SC", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff; }
+
+.nav__link:is(:hover, :active) {
+  color: #e7a298; }
+
+.section-hero {
+  padding: 6rem 2rem;
+  background-color: #efeae5;
+  color: #47352c;
+  text-align: center; }
+  @media only screen and (min-width: 31.5em) {
+    .section-hero {
+      padding: 6rem; } }
+  .section-hero span {
+    display: block; }
+
+.hero__img {
+  border-radius: 1rem;
+  width: 100%; }
+
+.hero__text {
+  margin-bottom: 2.5rem; }
+
+.section-services {
+  padding: 6rem 2rem;
+  background-color: #e8e1d9; }
+  @media only screen and (min-width: 31.5em) {
+    .section-services {
+      padding: 6rem; } }
+
+.service {
+  padding: 2rem;
+  background-color: #efeae5;
+  color: #47352c;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  text-align: center; }
+  .service:not(:last-child) {
+    margin-bottom: 2.5rem; }
+  .service:last-child {
+    margin-bottom: 8rem; }
+  .service__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #47352c; }
+
+.section-hours {
+  padding: 6rem 2rem;
+  background-color: #efeae5;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (min-width: 31.5em) {
+    .section-hours {
+      padding: 6rem; } }
+
+.hours__supporting-text {
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.hours__row {
+  padding: 0 2rem;
+  position: relative;
+  display: flex;
+  gap: 2rem; }
+  .hours__row:not(:last-child) {
+    margin-bottom: 2.5rem; }
+
+.hours__col {
+  display: flex;
+  flex-direction: column; }
+
+.hours__day {
+  color: #92664d;
+  font-size: 2.8rem; }
+
+.hours__from-to {
+  font-size: 1.3rem; }
+
+.hours__row::before, .hours__row::after {
+  position: absolute;
+  content: "";
+  background-color: #1f1714;
+  width: 1px;
+  height: 30%;
+  transform: translateY(130%); }
+
+.hours__row::before {
+  left: 0; }
+
+.hours__row::after {
+  right: 0; }
+
+.section-appointments {
+  padding: 6rem 2rem;
+  background-color: #efeae5; }
+  @media only screen and (min-width: 31.5em) {
+    .section-appointments {
+      padding: 6rem; } }
+
+.appointment__supporting-text {
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.appointment__form {
+  margin-bottom: 3rem; }
+
+.appointment__form-box:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.appointment__form-box > * {
+  display: block; }
+
+.appointment__form-box label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px; }
+
+.appointment__form-box input {
+  font-size: 1.7rem;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #92664d;
+  border-radius: 3px;
+  font-family: inherit;
+  border: none;
+  box-shadow: 0 0 0 2px #e8e1d9; }
+
+.appointment__form-box input::placeholder {
+  color: #e8e1d9; }
+
+.appointment__form-box input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #913022; }
+
+.btn__appointment {
+  border: none;
+  width: 100%; }
+
+.section-pricing {
+  padding: 6rem 2rem;
+  background-color: #e8e1d9; }
+  @media only screen and (min-width: 31.5em) {
+    .section-pricing {
+      padding: 6rem; } }
+
+.price {
+  text-align: center; }
+  .price:not(:last-child) {
+    margin-bottom: 4rem; }
+  .price__description {
+    font-size: 1.8rem;
+    color: #92664d; }
+  .price__amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Alegreya SC',sans-serif; }
+
+.footer {
+  padding: 4rem 2rem;
+  background-color: #1f1714;
+  text-align: center; }
+  .footer__text {
+    font-size: 1.3rem;
+    color: #e8e1d9;
+    opacity: .6; }
+  .footer__address {
+    font-family: "Alegreya SC", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: #e7a298; }
