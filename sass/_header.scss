@@ -24,3 +24,27 @@
     color: $clr-white;
   }
 }
+
+.section-hero{
+  padding: 6rem 2rem;
+  background-color: $clr-secondary--4;
+  color:$clr-secondary--1 ;
+  text-align: center;
+
+  & span{
+    display: block;
+  }
+}
+
+.hero{
+  &__img{
+    border-radius: 1rem;
+  }
+
+  &__text{
+    margin-bottom: 2.5rem;
+  }
+}
+
+
+
