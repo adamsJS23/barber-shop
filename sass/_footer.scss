@@ -1,0 +1,18 @@
+.footer {
+  padding: 4rem 2rem;
+  background-color: $clr-secondary;
+  text-align: center;
+  
+  &__text {
+    font-size: 1.3rem;
+    color: $clr-secondary--3;
+    opacity: .6;
+  }
+  
+  &__address {
+    font-family: "Alegreya SC", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: $clr-primary--2;
+  }
+}
