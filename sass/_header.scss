@@ -1,0 +1,26 @@
+.header {
+  background-color: $clr-secondary;
+  padding: 2rem;
+  text-align: center;
+  &__logo {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: 'Alegreya SC',sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $clr-white;
+  }
+}
