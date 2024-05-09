@@ -1,0 +1,30 @@
+.section-services {
+  padding: 6rem 2rem;
+  background-color: $clr-secondary--3;
+}
+
+.service {
+  padding: 2rem;
+  background-color: $clr-secondary--4;
+  color: $clr-secondary--1;
+  border-radius: 1rem;
+  box-shadow: $bx-shadow--1;
+  text-align: center;
+
+  &:not(:last-child){
+    margin-bottom: 2.5rem;
+  }
+
+  &:last-child{
+    margin-bottom: 8rem;
+  }
+
+  // Heading-4
+  &__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    @extend %style-heading;
+    color: $clr-secondary--1;
+  }
+
+}
