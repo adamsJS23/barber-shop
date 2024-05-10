@@ -1,9 +1,14 @@
 .header {
   background-color: $clr-secondary;
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
+
   &__logo {
     margin-bottom: 2.5rem;
+
+    @include respond($bp-tab-land) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -35,22 +40,46 @@
   color: $clr-secondary--1;
   text-align: center;
 
-  @include respond($bp-tab-port){
+  @include respond($bp-tab-port) {
     padding: 6rem;
   }
 
   & span {
     display: block;
+    @include respond($bp-tab-land) {
+      display: inline;
+    }
+  }
+
+  & span:last-child {
+    @include respond($bp-tab-land) {
+      margin-left: 2rem;
+    }
   }
 }
 
 .hero {
+  &__inner {
+    @include respond($bp-tab-land) {
+      width: 55%;
+    }
+  }
+
   &__img {
     border-radius: 1rem;
-    width: 100%;
+    width: 90%;
+
+    @include respond($bp-tab-port) {
+      width: 80%;
+    }
+
+    @include respond($bp-tab-land) {
+      width: 40%;
+    }
   }
 
   &__text {
     margin-bottom: 2.5rem;
   }
+
 }
