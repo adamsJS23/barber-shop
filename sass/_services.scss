@@ -1,10 +1,19 @@
 .section-services {
-  padding: 6rem 2rem;
+  padding: 6rem 0;
   background-color: $clr-secondary--3;
-
-  @include respond($bp-tab-port){
-    padding: 6rem;
+  @include respond($bp-tab-land) {
+    text-align: center;
   }
+}
+
+.services {
+  @include respond($bp-tab-land) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
 }
 
 .service {
@@ -15,20 +24,40 @@
   box-shadow: $bx-shadow--2;
   text-align: center;
 
-  &:not(:last-child){
-    margin-bottom: 2.5rem;
+  @include respond($bp-tab-land) {
+    margin: 2rem 0;
+    width: 48%;
   }
 
-  &:last-child{
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+    @include respond($bp-tab-land) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
     margin-bottom: 8rem;
+    @include respond($bp-tab-land) {
+      margin-bottom: 0;
+    }
   }
 
   // Heading-4
   &__name {
-    font-size: 1.8rem;
+    font-size: $ft-size-18;
     font-weight: 700;
     @extend %style-heading;
     color: $clr-secondary--1;
+
+    @include respond($bp-tab-land){
+      font: $ft-size-21;
+    }
   }
 
+  &__description {
+    @include respond($bp-tab-land) {
+      justify-self: flex-end;
+    }
+  }
 }
