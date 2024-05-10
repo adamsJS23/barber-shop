@@ -1,16 +1,30 @@
 .section-pricing {
-  padding: 6rem 2rem;
+  padding: 6rem 0;
   background-color: $clr-secondary--3;
+}
 
-  @include respond($bp-tab-port){
-    padding: 6rem;
+.prices {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  @include respond($bp-tab-port) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include respond($bp-tab-land) {
   }
 }
 
 .price {
   text-align: center;
 
-  &:not(:last-child){
+  @include respond($bp-tab-port) {
+    width: 30%;
+  }
+
+  &:not(:last-child) {
     margin-bottom: 4rem;
   }
 
@@ -23,6 +37,6 @@
   &__amount {
     font-size: 1.8rem;
     font-weight: 700;
-    font-family: 'Alegreya SC',sans-serif;
+    font-family: "Alegreya SC", sans-serif;
   }
 }
