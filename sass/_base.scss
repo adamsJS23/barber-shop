@@ -21,3 +21,17 @@ body {
 img {
   max-width: 100%;
 }
+
+.container {
+  width: 90%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.row {
+  @include respond($bp-tab-land) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
