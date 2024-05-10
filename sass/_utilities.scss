@@ -6,30 +6,36 @@
   background-color: $clr-secondary;
 }
 
-.clr-white{
-  color:$clr-secondary--4;
+.clr-white {
+  color: $clr-secondary--4;
 }
 
-.mgn-bt-tiny{
+.mgn-bt-tiny {
   margin-bottom: 2.5rem;
 }
 
-.mgn-bt-small{
+.mgn-bt-small {
   margin-bottom: 4rem;
 }
 
-.mgn-bt-medium{
+.mgn-bt-medium {
   margin-bottom: 6rem;
 }
 
-.mgn-bt-large{
+.mgn-bt-large {
   margin-bottom: 8rem;
 }
 
-.mgn-bt-huge{
+.mgn-bt-huge {
   margin-bottom: 10rem;
 }
 
-.ln-height-small{
+.ln-height-small {
   line-height: 1;
+}
+
+.mgn-left-small {
+  @include respond($bp-tab-port) {
+    margin-left: 2rem;
+  }
 }
