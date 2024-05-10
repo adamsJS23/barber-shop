@@ -29,6 +29,11 @@
     width: 48%;
   }
 
+  @include respond($bp-desktop) {
+    margin: 2rem 0;
+    width: 32%;
+  }
+
   &:not(:last-child) {
     margin-bottom: 2.5rem;
     @include respond($bp-tab-land) {
