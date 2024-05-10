@@ -5,6 +5,12 @@
     }
   }
 
+  @if ($breackpoint==tab-port-int) {
+    @media only screen and (min-width: 47.15em) {
+      @content;
+    }
+  }
+
   @if ($breackpoint==tab-land) {
     @media only screen and (min-width: 56.25em) {
       @content;
