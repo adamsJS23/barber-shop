@@ -18,6 +18,7 @@ $clr-white: #fff;
 
 // Fonts sizses for headings
 
+$ft-size-90: 9rem;
 $ft-size-60: 6rem;
 $ft-size-48: 4.8rem;
 $ft-size-36: 3.6rem;
@@ -28,15 +29,15 @@ $ft-size-28: 2.8rem;
 $ft-size-16: 1.6rem;
 $ft-size-18: 1.8rem;
 $ft-size-21: 2.1rem;
+$ft-size-13: 1.3rem;
 
 // SHADOWS
 
 $bx-shadow--1: 0 0.4rem 1.6rem rgba($clr-black, 0.05);
 $bx-shadow--2: 0 0.4rem 1.6rem rgba($clr-black, 0.15);
 
-
 // Breakpoints
 
-$bp-tab-port:tab-port;
-$bp-tab-land:tab-land;
-$bp-desktop:desktop;
+$bp-tab-port: tab-port;
+$bp-tab-land: tab-land;
+$bp-desktop: desktop;
