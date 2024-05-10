@@ -2,13 +2,18 @@
   font-family: "Source Sans 3", sans-serif;
   font-size: $ft-size-18; // For large screen use $ft-size-21
   font-weight: 700;
-
+  
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3rem;
   border-radius: 5px;
   text-decoration: none;
   color: $clr-secondary--4;
   box-shadow: $bx-shadow--1;
+  
+  @include respond($bp-tab-land){
+    font-size: $ft-size-21; // For large screen use $ft-size-21
+
+  }
 }
 
 .btn-primary{
