@@ -1,2 +1,6 @@
 node_modules
-draft.txt
+# draft.txt
+/logs
+# /css/style.css
+*.txt
+# /css
