@@ -1,11 +1,19 @@
 .heading-primary {
   font-size: $ft-size-60;
   @extend %style-heading;
+
+  @include respond($bp-tab-land){
+    font-size: $ft-size-90; 
+  }
 }
 
 .heading-secondary {
-  font-size: $ft-size-36; //For large screen use $ft-size-48
+  font-size: $ft-size-36; 
   @extend %style-heading;
+  
+  @include respond($bp-tab-land){
+    font-size: $ft-size-48;
+  }
 }
 
 .heading-tertiary {
@@ -14,6 +22,6 @@
 }
 
 .heading-fourth {
-  font-size: $ft-size-18; // for large screen use $ft-size-21
+  font-size: $ft-size-18;
   @extend %style-heading;
 }
