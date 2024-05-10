@@ -1,58 +1,76 @@
 .section-appointments {
-  padding: 6rem 2rem;
+  padding: 6rem 0;
   background-color: $clr-secondary--4;
-
-  @include respond($bp-tab-port){
-    padding: 6rem;
-  }
 }
 
-.appointment__supporting-text {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.appointment__form {
-  margin-bottom: 3rem;
-}
-
-.appointment__form-box {
-  &:not(:last-child) {
+.appointment {
+  &__supporting-text {
     margin-bottom: 2rem;
+    text-align: center;
   }
 
-  & > * {
-    display: block;
+  &__form {
+    margin-bottom: 3rem;
+    @include respond($bp-tab-port) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
-  & label {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 4px;
+  &__form-box {
+    @include respond($bp-tab-port) {
+      width: 47%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    & > * {
+      display: block;
+    }
+
+    & label {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    & input {
+      font-size: 1.7rem;
+      padding: 1rem;
+      width: 100%;
+      border: 1px solid $clr-secondary--2;
+      border-radius: 3px;
+      font-family: inherit;
+      border: none;
+      box-shadow: 0 0 0 2px $clr-secondary--3;
+    }
+
+    & input::placeholder {
+      color: $clr-secondary--3;
+    }
+
+    & input:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $clr-primary;
+    }
   }
 
-  & input {
-    font-size: 1.7rem;
-    padding: 1rem;
-    width: 100%;
-    border: 1px solid $clr-secondary--2;
-    border-radius: 3px;
-    font-family: inherit;
-    border: none;
-    box-shadow: 0 0 0 2px $clr-secondary--3;
-  }
-
-  & input::placeholder {
-    color: $clr-secondary--3;
-  }
-
-  & input:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px $clr-primary;
+  &__form-btn-wrapper {
+    @include respond($bp-tab-port) {
+      text-align: right;
+    }
   }
 }
 
 .btn__appointment {
   border: none;
   width: 100%;
+
+  @include respond($bp-tab-port) {
+    width: auto;
+    margin-left: auto;
+  }
 }
