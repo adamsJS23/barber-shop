@@ -11,6 +11,13 @@
 }
 
 .hours {
+  @include respond($bp-tab-port){
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
   &__supporting-text {
     margin-bottom: 4rem;
     text-align: center;
@@ -21,6 +28,11 @@
     position: relative;
     display: flex;
     gap: 2rem;
+    
+    @include respond($bp-tab-land){
+      gap: 4.5rem;
+    }
+
 
     &:not(:last-child) {
       margin-bottom: 2.5rem;
@@ -35,29 +47,29 @@
   &__day {
     @extend %style-heading;
     color: $clr-secondary--2;
-    font-size: 2.8rem;
+    font-size: $ft-size-28;
   }
 
   &__from-to {
-    font-size: 1.3rem;
+    font-size: $ft-size-13;
   }
 }
 
-.hours__row::before, .hours__row::after {
-  position: absolute;
-  content: "";
-  background-color: $clr-secondary;
+// .hours__row::before, .hours__row::after {
+//   position: absolute;
+//   content: "";
+//   background-color: $clr-secondary;
   
-  width: 1px;
-  height: 30%;
-  transform: translateY(130%);
-}
+//   width: 1px;
+//   height: 30%;
+//   transform: translateY(130%);
+// }
 
 
-.hours__row::before{
-left: 0;
-}
-.hours__row::after{
-right: 0;
-}
+// .hours__row::before{
+// left: 0;
+// }
+// .hours__row::after{
+// right: 0;
+// }
 
