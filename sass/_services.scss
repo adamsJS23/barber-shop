@@ -7,7 +7,7 @@
 }
 
 .services {
-  @include respond($bp-tab-land) {
+  @include respond($bp-tab-port-int) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -24,7 +24,7 @@
   box-shadow: $bx-shadow--2;
   text-align: center;
 
-  @include respond($bp-tab-land) {
+  @include respond($bp-tab-port-int) {
     margin: 2rem 0;
     width: 48%;
   }
@@ -36,14 +36,14 @@
 
   &:not(:last-child) {
     margin-bottom: 2.5rem;
-    @include respond($bp-tab-land) {
+    @include respond($bp-tab-port-int) {
       margin-bottom: 0;
     }
   }
 
   &:last-child {
     margin-bottom: 8rem;
-    @include respond($bp-tab-land) {
+    @include respond($bp-tab-port-int) {
       margin-bottom: 0;
     }
   }
